@@ -1,10 +1,6 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import AuthLayout from "./layouts/auth_layout";
 import LoginForm from "./pages/login";
@@ -17,13 +13,13 @@ createRoot(document.getElementById("root")!).render(
   <BrowserRouter>
     <Routes>
       <Route>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/" element={<Home />} />
       </Route>
       <Route element={<AuthLayout />}>
         <Route path="login" element={<LoginForm />} />
         <Route path="register" element={<RegisterForm />} />
-        <Route path="sendOtp" element={<SendOtpForm/>}/>
-        <Route path="forgotPassword" element={<ForgotPasswordForm/>}/>
+        <Route path="sendOtp" element={<SendOtpForm />} />
+        <Route path="forgotPassword" element={<ForgotPasswordForm />} />
       </Route>
     </Routes>
   </BrowserRouter>

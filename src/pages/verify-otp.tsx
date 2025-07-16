@@ -48,7 +48,7 @@ function OTPForm({ email }: OTPFormProps) {
             setLoading(true);
             setMessage('Verifying...');
 
-            const response = await axios.post('http://localhost:3000/otp/verify_otp', {
+            const response = await axios.post('https://saa-s-login-page.vercel.app/otp/verify_otp', {
                 email: email.trim(),
                 otp: otp.trim()
             }, {

@@ -44,7 +44,7 @@ function ForgotPasswordOTPForm({ email }: ForgotPasswordOTPFormProps) {
 
     try {
       setLoading(true)
-      const res = await axios.post('http://localhost:3000/otp/verify_otp', {
+      const res = await axios.post('https://saa-s-login-page.vercel.app/otp/verify_otp', {
         email,
         otp,
         purpose: 'forgot_password'

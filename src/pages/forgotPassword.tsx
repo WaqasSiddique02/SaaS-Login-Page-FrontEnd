@@ -21,7 +21,7 @@ function ForgotPasswordForm() {
 
     try {
       const res = await axios.put(
-        `http://localhost:3000/users/reset_password/${email}`,
+        `https://saa-s-login-page.vercel.app/users/reset_password/${email}`,
         { newPassword }
       );
       console.log("Password updated response:", res.data);

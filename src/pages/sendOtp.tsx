@@ -16,7 +16,7 @@ function SendOtpForm() {
 
     try {
       setLoading(true)
-      const res = await axios.post('http://localhost:3000/otp/send_otp', { 
+      const res = await axios.post('https://saa-s-login-page.vercel.app/otp/send_otp', { 
         email,
         purpose: 'forgot_password'
       })
