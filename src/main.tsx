@@ -10,17 +10,17 @@ import ForgotPasswordForm from "./pages/forgotPassword";
 import Home from "./layouts/home";
 
 createRoot(document.getElementById("root")!).render(
-  <BrowserRouter>
-    <Routes>
-      <Route>
-        <Route path="/" element={<Home />} />
-      </Route>
-      <Route element={<AuthLayout />}>
-        <Route path="login" element={<LoginForm />} />
-        <Route path="register" element={<RegisterForm />} />
-        <Route path="sendOtp" element={<SendOtpForm />} />
-        <Route path="forgotPassword" element={<ForgotPasswordForm />} />
-      </Route>
-    </Routes>
-  </BrowserRouter>
+ <BrowserRouter>
+  <Routes>
+    <Route path="/" element={<Home />} />
+
+    <Route element={<AuthLayout />}>
+      <Route path="login" element={<LoginForm />} />
+      <Route path="register" element={<RegisterForm />} />
+      <Route path="sendOtp" element={<SendOtpForm />} />
+      <Route path="forgotPassword" element={<ForgotPasswordForm />} />
+    </Route>
+  </Routes>
+</BrowserRouter>
+
 );

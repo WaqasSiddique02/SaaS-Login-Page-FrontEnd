@@ -172,7 +172,7 @@ function RegisterForm() {
       <button
         onClick={handleGoogleLogin}
         type="button"
-        className="w-full lg:w-[68%] px-4 py-3 flex justify-center items-center  bg-red-600 hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 text-white transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full "
+        className="w-full max-w-xs sm:max-w-sm md:max-w-md px-4 py-3 flex justify-center items-center  bg-red-600 hover:bg-red-700 focus:ring-red-500 focus:ring-offset-red-200 text-white transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-full "
       >
         <svg
           width="20"
